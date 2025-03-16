@@ -23,4 +23,3 @@ for(let i of arr){
   sum += i;
 }
 console.log(sum)
-console.log(sum)
