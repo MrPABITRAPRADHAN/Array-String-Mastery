@@ -17,3 +17,8 @@ console.log(array)
 //? how to check no is integer or not
 let n = 7.5;
 console.log(n %1 ==0? "integer":"not an integer")
+
+//? string in alphabetical order
+let ss = "pabitra"
+console.log(ss.split("").sort().join(""))
+console.log(ss)
