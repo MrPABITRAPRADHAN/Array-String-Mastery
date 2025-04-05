@@ -21,4 +21,20 @@ console.log(n %1 ==0? "integer":"not an integer")
 //? string in alphabetical order
 let ss = "pabitra"
 console.log(ss.split("").sort().join(""))
-console.log(ss)
+
+//?
+console.log(5<8>2)   //false
+console.log(1>9<2)   //true
+
+
+//? add a field that is active:true in each object
+let users = [
+    {name:"abc", age: 20},
+    {name:"xyz", age: 25},
+    {name:"pqr", age: 30},
+]
+
+users.forEach((user) => {
+  user.active = true;
+})
+console.log(users)
