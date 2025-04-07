@@ -28,19 +28,19 @@
 
 
 //? add a field that is active:true in each object
-let users = [
-    {name:"abc", age: 20},
-    {name:"xyz", age: 25},
-    {name:"pqr", age: 30},
-]
+// let users = [
+//     {name:"abc", age: 20},
+//     {name:"xyz", age: 25},
+//     {name:"pqr", age: 30},
+// ]
 
 //? add field
-let a = users.forEach((user) => {
-  // user.active
-   user = {...user, active:true}
-   console.log(user)
-})
-console.log(a)
+// let a = users.forEach((user) => {
+//   // user.active
+//    user = {...user, active:true}
+//    console.log(user)
+// })
+// console.log(a)
 
 //? remove duplicate from array
 // let arr = [1,1,2,3,3,4,4]
@@ -61,21 +61,40 @@ console.log(a)
 // const arr = ['a', 'b', 'a'];
 // const frequency = arr.reduce((ac, val))
 
-const arr = ['a', 'b', 'a'];
-const freq = arr.reduce((acc, val) => {
-  acc[val] = (acc[val] || 0) + 1;
-  return acc;
-}, {});
-console.log(freq)
-let obj = freq;
+// const arr = ['a', 'b', 'a'];
 
-let maxKey = ""
-let max = 0;
-for(let i in obj){
-  // console.log(obj[i])
-  if(obj[i]>max){
-    max = obj[i]
-    maxKey = i;
+// const freq = arr.reduce((acc, val) => {
+//   acc[val] = (acc[val] || 0) + 1;
+//   return acc;
+// }, {});
+// console.log(freq)
+// let obj = freq;
+
+// let maxKey = "";
+// let max = 0;
+// for(let i in obj){
+//   // console.log(obj[i])
+//   if(obj[i]>max){
+//     max = obj[i]
+//     maxKey = i;
+//   }
+// }
+// console.log(maxKey)
+
+
+
+let str = ")(}{}][";
+let obj1 = {};
+let obj2 = {};
+
+str.split("").forEach((el)=>{
+  if(el == "(" || el == "{" || el == "["){
+    obj1[el] = (obj1[el] || 0) + 1;
   }
-}
-console.log(maxKey)
+  if(el == ")" || el == "}" || el == "]"){
+    obj2[el] = (obj2[el] || 0) + 1;
+  }
+    
+})
+console.log(obj1)
+console.log(obj2)
