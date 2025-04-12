@@ -83,18 +83,36 @@
 
 
 
-let str = ")(}{}][";
-let obj1 = {};
-let obj2 = {};
+// let str = ")(}{}][";
+// let obj1 = {};
+// let obj2 = {};
 
-str.split("").forEach((el)=>{
-  if(el == "(" || el == "{" || el == "["){
-    obj1[el] = (obj1[el] || 0) + 1;
-  }
-  if(el == ")" || el == "}" || el == "]"){
-    obj2[el] = (obj2[el] || 0) + 1;
-  }
+// str.split("").forEach((el)=>{
+//   if(el == "(" || el == "{" || el == "["){
+//     obj1[el] = (obj1[el] || 0) + 1;
+//   }
+//   if(el == ")" || el == "}" || el == "]"){
+//     obj2[el] = (obj2[el] || 0) + 1;
+//   }
     
-})
-console.log(obj1)
-console.log(obj2)
+// })
+// console.log(obj1)
+// console.log(obj2)
+
+
+
+
+// function outer(){
+//   let a = 10;
+//   let b = 20;
+//   function inner(){
+//     return a+b
+//   }
+//   function inner1(){
+//     return a+b
+//   }
+
+//   return {inner, inner1}
+// }
+
+// console.log(outer())
