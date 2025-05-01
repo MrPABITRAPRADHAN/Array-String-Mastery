@@ -12,12 +12,9 @@ let arr = [10, 20, 30, 30, 50];
 // })
 // console.log(arr1)
 
-console.log(arr.map((e, i) => `value : ${e}, index: ${i}`))
+// console.log(arr.map((e, i) => `value : ${e}, index: ${i}`))
 //? filter =>
-// arr.filter((e)=>{
-//     console.log(e)
-//     return true;  // true , for not filtering any value
-// })
+// 
 
 
 //? for loop =>
