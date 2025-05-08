@@ -84,22 +84,6 @@
 
 
 // let str = ")(}{}][";
-// let obj1 = {};
-// let obj2 = {};
-
-// str.split("").forEach((el)=>{
-//   if(el == "(" || el == "{" || el == "["){
-//     obj1[el] = (obj1[el] || 0) + 1;
-//   }
-//   if(el == ")" || el == "}" || el == "]"){
-//     obj2[el] = (obj2[el] || 0) + 1;
-//   }
-    
-// })
-// console.log(obj1)
-// console.log(obj2)
-
-
 
 
 // function outer(){
@@ -114,5 +98,78 @@
 
 //   return {inner, inner1}
 // }
-
 // console.log(outer())
+
+
+
+//! 13   //
+                            //? interview qn (Vinnovative lab)
+// let obj = [
+//     {id: 1, name: "a"},
+//     {id: 2, name: "b"}, 
+//     {id: 1, name: "c"},
+//     {id: 3, name: "d"},
+//     {id: 2, name: "e"},
+//     {id: 4, name: "f"},
+//     {id: 5,},
+// ]
+
+//? expected output :
+// {
+//   '1': [ 'a', 'c' ],
+//   '2': [ 'b', 'e' ],
+//   '3': [ 'd' ],
+//   '4': [ 'f' ],
+//   '5': [ undefined ]
+// }
+
+// let newObj = obj.reduce((acc, curr)=>{
+//   acc[curr.id] = acc[curr.id] || [];
+//   acc[curr.id].push(curr.name)
+//   return acc;
+// },{})
+// console.log(newObj)
+
+
+
+//! 14
+// const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+// const fruitCount = fruits.reduce((acc, fruit)=>{
+//     acc[fruit] = acc[fruit];
+//     acc[fruit] = (acc[fruit] || 0) + 1;
+//     return acc;
+// },{})
+// console.log(fruitCount)  // { apple: 3, banana: 2, orange: 1 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(let i=0; i<arr.length; i++){
+//   let count = 1;
+//   for(let j = i+1; j<arr.length ; j++){
+//     if(arr[i] == arr[j]){
+//      count++;
+//     }
+//   }
+//   console.log(arr[i] + " - " + count + " times")
+// }
